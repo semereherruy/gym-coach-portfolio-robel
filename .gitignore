@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+._*
+
+# Source portfolio document — 18 MB, and it carries the certificate and the
+# full-resolution client photos. Its content is transcribed into the site and
+# the web-sized images live in assets/img/. Remove this line to include it.
+port/
+
+# Optional: extracted video frames for the scroll sequence
+assets/media/*.mp4
