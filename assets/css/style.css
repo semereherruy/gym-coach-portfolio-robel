@@ -891,7 +891,7 @@ html:not(.js) .rail__fill{transform:scaleX(0)}
 .contact__map img,.sheet__hero img{
   filter:grayscale(.92) contrast(1.07) brightness(.8);
 }
-.hero__bg img,.cta__bg img{filter:grayscale(.78) contrast(1.06) brightness(.9)}
+.hero__bg img,.cta__bg img{filter:grayscale(.85) contrast(1.1) brightness(1.06)}
 .seq__canvas{filter:grayscale(.86) contrast(1.06) brightness(.88)}
 .prog__card:hover .prog__thumb img,.sheet__f.is-on img,.sheet__f:hover img{filter:grayscale(0) contrast(1.02)}
 
@@ -937,8 +937,8 @@ html:not(.js) .rail__fill{transform:scaleX(0)}
   .hero__bg img{width:100%;height:100%;object-fit:cover;object-position:50% 16%}
   .hero__bg::after{
     background:
-      linear-gradient(90deg,var(--bg) 0%,rgba(13,13,13,.72) 26%,rgba(13,13,13,.1) 72%,transparent 100%),
-      linear-gradient(180deg,rgba(13,13,13,.55) 0%,transparent 26%,transparent 62%,rgba(13,13,13,.8) 100%);
+      linear-gradient(90deg,var(--bg) 0%,rgba(13,13,13,.82) 12%,rgba(13,13,13,.22) 46%,transparent 80%),
+      linear-gradient(180deg,rgba(13,13,13,.34) 0%,transparent 24%,transparent 64%,rgba(13,13,13,.78) 100%);
   }
   .hero__in>*{max-width:min(62%,860px)}
   .hero__title{font-size:clamp(2.3rem,5vw,4.7rem)}
@@ -949,3 +949,14 @@ html:not(.js) .rail__fill{transform:scaleX(0)}
     background:linear-gradient(180deg,rgba(13,13,13,.62) 0%,rgba(13,13,13,.28) 32%,rgba(13,13,13,.82) 72%,var(--bg) 100%);
   }
 }
+
+/* 22. LEAD CERTIFICATION + FIVE-CARD RESULTS GRID ---------------------- */
+.chips__lead{
+  background:var(--accent) !important;color:var(--accent-ink) !important;
+  border-color:var(--accent) !important;font-weight:700;
+}
+.chips__lead:hover{color:var(--accent-ink) !important;border-color:var(--accent) !important}
+/* Five comparisons: three across, two on the second row. */
+.tr__grid{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1080px){.tr__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.tr__grid{grid-template-columns:1fr}}
